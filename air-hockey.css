@@ -1,0 +1,142 @@
+body {
+	background-color: gray;
+}
+
+div.table {
+	background-color: white;
+	width: 800px;
+	margin: auto;
+	max-height: 500px;
+	border-width: 16px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 10%;
+}
+
+div.left-goal {
+	background-color: lightgray;
+	width: 16px;
+	height: 250px;
+	position: relative;
+	top: 125px;
+	right:16px;
+
+}
+
+div.right-goal {
+	background-color: lightgray;
+	width: 16px;
+	height: 250px;
+	position: relative;
+	left: 800px;
+	bottom: 125px;
+}
+
+div.middle-line {
+	background-color: blue;
+	width: 6px;
+	height: 500px;
+	opacity: 0.2;
+	position: relative;
+	bottom: 500px;
+	left: 400px; 
+}
+
+div.left-middle-line {
+	background-color: blue;
+	width: 6px;
+	height: 500px;
+	opacity: 0.2;
+	position: relative;
+	bottom: 1000px;
+	left: 275px;
+}
+
+div.right-middle-line {
+	background-color: blue;
+	width: 6px;
+	height: 500px;
+	opacity: 0.2;
+	position: relative;
+	bottom: 1500px;
+	left: 525px;
+}
+
+div.puck {
+  	height: 100px;
+ 	width: 100px;
+  	background-color: black;
+  	border-radius: 50%;
+  	position: relative;
+  	bottom: 1800px;
+  	left: 350px;
+}
+
+div.ring {
+	height: 200px;
+ 	width: 200px;
+  	background-color: red;
+  	border-radius: 50%;
+  	opacity: 0.2;
+  	position: relative;
+  	bottom: 1950px;
+  	left: 300px;
+}
+
+div.ring-inner {
+	height: 180px;
+ 	width: 180px;
+  	background-color: white;
+  	border-radius: 50%;
+  	position: relative;
+  	left: 10px;
+  	top: 10px;
+}
+
+div.arc1 { 
+    position: relative; 
+    bottom:2100px;
+    right: 75px;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg); 
+    height: 100px; 
+    width: 250px; 
+    border-radius: 150px 150px 0 0; 
+	background-color: lightgray; 
+	opacity: 0.3;
+} 
+
+div.arc2 { 
+    position: relative; 
+    bottom:2200px;
+    left: 625px;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg); 
+    height: 100px; 
+    width: 250px; 
+    border-radius: 150px 150px 0 0; 
+	background-color: lightgray; 
+	opacity: 0.3;
+}
+
+div.paddle1 {
+	height: 120px;
+ 	width: 120px;
+  	background-color: red;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: 200px;
+  	left:400px;
+  	margin:auto;
+}
+
+div.paddle2 {
+	height: 120px;
+ 	width: 120px;
+  	background-color: red;
+  	border-radius: 50%;
+  	top:210px;
+  	left:1000px;
+  	position: absolute;
+  	
+}
