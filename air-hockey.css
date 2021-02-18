@@ -72,6 +72,7 @@ div.puck {
   	left: 350px;
 }
 
+
 div.ring {
 	height: 200px;
  	width: 200px;
@@ -126,8 +127,16 @@ div.paddle1 {
   	border-radius: 50%;
   	position: absolute;
   	top: 200px;
-  	left:400px;
+  	left:600px;
   	margin:auto;
+}
+
+[draggable=true]{
+	cursor: move;
+}
+
+div.paddle1:hover{
+	-webkit-user-drag: element;
 }
 
 div.paddle2 {
@@ -139,4 +148,8 @@ div.paddle2 {
   	left:1000px;
   	position: absolute;
   	
+}
+
+div.paddle2:hover{
+	-webkit-transform: translateX(-50px); 
 }
