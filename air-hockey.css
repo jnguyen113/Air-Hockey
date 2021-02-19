@@ -2,6 +2,17 @@ h1{
 	text-align: center;
 	color: white;
 	font-size: 50px;
+	animation-name: colorchange;
+	animation-duration: 4s;
+}
+
+@keyframes colorchange {
+	0% {color: rgb(223, 139, 139);}
+	20% {color: black;}
+	40% {color: purple}
+	60% {color: yellow}
+	80% {color: pink}
+	100% {color: rgb(247, 247, 233);}
 }
 
 .scoreboard{
@@ -25,8 +36,10 @@ h1{
 	font-family: sans-serif;
 	color: white;
 	height: 50px;
-
+	animation-name: colorchange;
+	animation-duration: 4s;
 }
+
 .score{
 	margin-top: -.5em;
 	border: 5px solid red;
@@ -119,7 +132,6 @@ div.puck {
   	left: 350px;
 }
 
-
 div.ring {
 	height: 200px;
  	width: 200px;
@@ -200,3 +212,43 @@ div.paddle2 {
 div.paddle2:hover{
 	-webkit-transform: translateX(-50px); 
 }
+
+.container {
+	position: fixed;
+	height: 55px;
+	width: 60px;
+	background-color: rgb(223, 139, 139); 
+}
+
+.container.first {
+	bottom: 60px;
+	left: 0;
+}
+
+.container.second {
+	bottom: 0px;
+	left: 0;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .1s opacity, 2s width;
+	background-color: rgb(223, 139, 139); 
+}
+
+.container:hover .overlay {
+	opacity: 1;
+	width: 200px;
+}
+
+#play {
+	text-align: center;
+	font-size: 18pt;
+}
+
+
