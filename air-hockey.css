@@ -188,6 +188,18 @@ div.paddle1 {
   	top: 300px;
   	left:600px;
   	margin:auto;
+	animation-name: strafe;
+  	animation-duration: 6s;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes strafe {
+	0% {top:300px; left:600px;}
+	25%{top:500px; left:600px;}
+	50%{top:300px; left:600px;}
+	75%{top:200px; left:600px;}
+	100%{top:300px; left:600px;}
+
 }
 
 [draggable=true]{
@@ -206,8 +218,19 @@ div.paddle2 {
   	top:350px;
   	left:1010px;
   	position: absolute;
-  	
+  	animation-name: strafe2;
+  	animation-duration: 6s;
+  	animation-iteration-count: infinite;
 }
+
+@keyframes strafe2 {
+ 	0% {top:350px; left:1010px;}
+	25%{top:200px; left:1010px;}
+	50%{top:350px; left:1010px;}
+	75%{top:500px; left:1010px;}
+	100%{top:350px; left:1010px;}
+
+ }
 
 div.paddle2:hover{
 	-webkit-transform: translateX(-50px); 
