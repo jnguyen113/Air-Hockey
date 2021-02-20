@@ -4,6 +4,7 @@ h1{
 	font-size: 50px;
 	animation-name: colorchange;
 	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes colorchange {
@@ -15,40 +16,22 @@ h1{
 	100% {color: rgb(247, 247, 233);}
 }
 
-.scoreboard{
+div.scoreboard{
 	margin: 30px;
 	background-color: white;
 	font-weight: bold;
 	text-align: center;
 }
 
-.scoreboard button{
-	font-size: 20px;
-	color: white;
-	border-radius: 5%;
-	margin-top: -10em;
-	width: 200px;
-	height: 70px;
+div.leftScore{
+	float: left;
 }
 
-
-.increment{
-	border: 5px solid greenyellow;
-	background-color: lightgreen;
-}
-.increment:hover{
-	background-color: rgb(66, 219, 66);
+div.rightScore{
+	float: right;
 }
 
-.decrement{
-	border: 5px solid red;
-	background-color: rgb(223, 139, 139);
-}
-
-.decrement:hover{
-	background-color: rgb(243, 103, 103);
-}
-.scoreboard p{
+div.scoreboard p{
 	border-radius: 5%;
 	padding: 5px;
 	width: 400px;
@@ -63,6 +46,7 @@ h1{
 	height: 50px;
 	animation-name: colorchange;
 	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 
 .score{
@@ -74,14 +58,33 @@ h1{
 	color: white;
 }
 
-
-.leftScore{
-	float: left;
+div.scoreboard button{
+	font-size: 20px;
+	color: white;
+	border-radius: 5%;
+	margin-top: -10em;
+	width: 200px;
+	height: 70px;
 }
 
-.rightScore{
-	float: right;
+.increment{
+	border: 5px solid greenyellow;
+	background-color: lightgreen;
 }
+/*mouse over button*/
+.increment:hover{
+	background-color: rgb(66, 219, 66);
+}
+
+.decrement{
+	border: 5px solid red;
+	background-color: rgb(223, 139, 139);
+}
+/*mouse over button*/
+.decrement:hover{
+	background-color: rgb(243, 103, 103);
+}
+
 
 body {
 	background-color: rgb(73, 145, 179);
@@ -105,7 +108,6 @@ div.left-goal {
 	position: relative;
 	top: 125px;
 	right:16px;
-
 }
 
 div.right-goal {
@@ -155,9 +157,7 @@ div.puck {
   	position: relative;
   	bottom: 1800px;
   	left: 350px;
-
 }
-
 
 div.ring {
 	height: 200px;
@@ -220,17 +220,13 @@ div.paddle1 {
   	animation-iteration-count: infinite;
 }
 
+/*strafing for the left paddle to move towards the puck, awap, up, and back to the puck*/
 @keyframes strafe {
 	0% {top:300px; left:600px;}
 	25%{top:380px; left:810px;}
 	50%{top:300px; left:550px;}
 	75%{top:150px; left:600px;}
 	100%{top:300px; left:810px;}
-}
-
-
-div.paddle1:hover{
-	-webkit-user-drag: element;
 }
 
 div.paddle2 {
@@ -245,34 +241,33 @@ div.paddle2 {
   	animation-duration: 6s;
   	animation-iteration-count: infinite;
 }
-
+/*strafing for the right paddle to move away from puck, towards, away, and down*/
 @keyframes strafe2 {
  	0% {top:300px; left:1010px;}
 	25%{top:300px; left:1200px;}
-	50%{top:380x; left:1000px;}
+	50%{top:380px; left:1000px;}
 	75%{top:300px; left:1200px;}
 	100%{top:500px; left:1200px;}
-
  }
 
-.container {
+div.container {
 	position: fixed;
 	height: 55px;
 	width: 60px;
 	background-color: white; 
 }
 
-.container.first {
+div.container.first {
 	bottom: 60px;
 	left: 0;
 }
 
-.container.second {
+div.container.second {
 	bottom: 0px;
 	left: 0;
 }
 
-.overlay {
+div.overlay {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -288,7 +283,7 @@ div.paddle2 {
 	width: 200px;
 }
 
-.summarylink{
+div.summarylink{
 	text-align: center;
 	font-size: 30px;
 }
@@ -296,12 +291,12 @@ div.paddle2 {
 a:hover{
 	color: white;
 }
-#play {
+.play {
 	text-align: center;
 	font-size: 18pt;
 }
 
-.summary{
+div.summary{
 	border: 5px solid rgb(73, 73, 245);
 	border-radius: 5px;
 	margin: auto;
