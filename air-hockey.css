@@ -20,9 +20,34 @@ h1{
 	background-color: white;
 	font-weight: bold;
 	text-align: center;
-	
 }
 
+.scoreboard button{
+	font-size: 20px;
+	color: white;
+	border-radius: 5%;
+	margin-top: -10em;
+	width: 200px;
+	height: 70px;
+}
+
+
+.increment{
+	border: 5px solid greenyellow;
+	background-color: lightgreen;
+}
+.increment:hover{
+	background-color: rgb(66, 219, 66);
+}
+
+.decrement{
+	border: 5px solid red;
+	background-color: rgb(223, 139, 139);
+}
+
+.decrement:hover{
+	background-color: rgb(243, 103, 103);
+}
 .scoreboard p{
 	border-radius: 5%;
 	padding: 5px;
@@ -42,8 +67,8 @@ h1{
 
 .score{
 	margin-top: -.5em;
-	border: 5px solid red;
-	background-color: rgb(223, 139, 139);
+	border: 5px solid blue;
+	background-color: rgb(139, 206, 223);
 	height: 120px;
 	font-size: 60px;
 	color: white;
@@ -59,7 +84,7 @@ h1{
 }
 
 body {
-	background-color: gray;
+	background-color: rgb(73, 145, 179);
 }
 
 div.table {
@@ -130,7 +155,9 @@ div.puck {
   	position: relative;
   	bottom: 1800px;
   	left: 350px;
+
 }
+
 
 div.ring {
 	height: 200px;
@@ -195,16 +222,12 @@ div.paddle1 {
 
 @keyframes strafe {
 	0% {top:300px; left:600px;}
-	25%{top:500px; left:600px;}
-	50%{top:300px; left:600px;}
-	75%{top:200px; left:600px;}
-	100%{top:300px; left:600px;}
-
+	25%{top:380px; left:810px;}
+	50%{top:300px; left:550px;}
+	75%{top:150px; left:600px;}
+	100%{top:300px; left:810px;}
 }
 
-[draggable=true]{
-	cursor: move;
-}
 
 div.paddle1:hover{
 	-webkit-user-drag: element;
@@ -224,23 +247,19 @@ div.paddle2 {
 }
 
 @keyframes strafe2 {
- 	0% {top:350px; left:1010px;}
-	25%{top:200px; left:1010px;}
-	50%{top:350px; left:1010px;}
-	75%{top:500px; left:1010px;}
-	100%{top:350px; left:1010px;}
+ 	0% {top:300px; left:1010px;}
+	25%{top:300px; left:1200px;}
+	50%{top:380x; left:1000px;}
+	75%{top:300px; left:1200px;}
+	100%{top:500px; left:1200px;}
 
  }
-
-div.paddle2:hover{
-	-webkit-transform: translateX(-50px); 
-}
 
 .container {
 	position: fixed;
 	height: 55px;
 	width: 60px;
-	background-color: rgb(223, 139, 139); 
+	background-color: white; 
 }
 
 .container.first {
@@ -269,9 +288,26 @@ div.paddle2:hover{
 	width: 200px;
 }
 
+.summarylink{
+	text-align: center;
+	font-size: 30px;
+}
+
+a:hover{
+	color: white;
+}
 #play {
 	text-align: center;
 	font-size: 18pt;
 }
 
-
+.summary{
+	border: 5px solid rgb(73, 73, 245);
+	border-radius: 5px;
+	margin: auto;
+	font-size: 25px;
+	line-height: 80px;
+	background-color: rgb(243, 229, 229); 
+	color: black;
+	opacity: .8;
+}
