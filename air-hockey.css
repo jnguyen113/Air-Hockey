@@ -306,3 +306,81 @@ div.summary{
 	color: black;
 	opacity: .8;
 }
+
+/*
+Hayden Kowalchuk
+Tournament Bracket
+*/
+
+.tourney_bracket {
+	display:flex;
+	align-items: stretch;
+	height: 400px;
+}
+
+.bracket_quarter_high,
+.bracket_quarter_low {
+	height: 50%;
+	border-radius: 25px;
+	border: 8px solid 	#005073;
+	background-color: white;
+}
+
+.bracket_team:nth-child(1){
+	height: 25%;
+	text-align: center;
+	margin-top: 25%;
+	padding-top: 25%;
+}
+
+.bracket_team:nth-child(2){
+	height: 25%;
+	text-align: center;
+	margin-bottom: 25%;
+	padding-bottom: 25%;
+}
+
+.bracket_semi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	min-height: 400px;
+}
+
+.semi_wrapper {
+	border-radius: 25px;
+	border: 8px solid #1ebbd7;
+	margin: 100% 0 100% 0;
+	background-color: white;
+}
+
+.semi_wrapper > div {
+	text-align: center;
+	position: relative;
+	padding: 2em 0 2em 0;
+}
+
+.bracket_final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	min-height: 400px;
+}
+
+.bracket_final > div {
+	border-radius: 25px;
+	border: 8px solid #71c7ec;
+	text-align: center;
+	position: relative;
+	padding: 1em;
+	background-color: white;
+}
+
+.tourney_bracket span {
+	padding-left:0.25em;
+	padding-right:0.25em;
+	font-style: italic;
+	color:#212121;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size:large;
+}
