@@ -341,13 +341,11 @@ Tournament Bracket
 }
 
 .bracket_semi {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-	min-height: 400px;
 }
 
 .semi_wrapper {
+	align-items: center;
+	justify-content: center;
 	border-radius: 25px;
 	border: 8px solid #1ebbd7;
 	margin: 100% 0 100% 0;
@@ -383,4 +381,15 @@ Tournament Bracket
 	color:#212121;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size:large;
+}
+
+.tourney_bracket h2 {
+	padding-left:0.25em;
+	padding-right:0.25em;
+	font-style: italic;
+	text-decoration: underline;
+	color:#212121;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size:2em;
+	text-align: center;
 }
