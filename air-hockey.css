@@ -402,3 +402,28 @@ Tournament Bracket
 	font-size:2em;
 	text-align: center;
 }
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slide_left{
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.slide_right{
+  animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
