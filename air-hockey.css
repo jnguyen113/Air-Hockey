@@ -322,6 +322,9 @@ Tournament Bracket
 	display:flex;
 	align-items: stretch;
 	height: 400px;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
 }
 
 .bracket_quarter_high,
