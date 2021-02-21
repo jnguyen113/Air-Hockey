@@ -6,7 +6,11 @@ h1{
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
-
+/*enlargers text 1.5x on hover*/
+h1:hover{
+	transform: scale(1.5);
+}
+/*Changes text color for h1 and player*/
 @keyframes colorchange {
 	0% {color: rgb(223, 139, 139);}
 	20% {color: black;}
@@ -220,7 +224,8 @@ div.paddle1 {
   	animation-iteration-count: infinite;
 }
 
-/*strafing for the left paddle to move towards the puck, awap, up, and back to the puck*/
+/*strafing for the left paddle to move towards 
+the puck, away, up, and back to the puck*/
 @keyframes strafe {
 	0% {top:300px; left:600px;}
 	25%{top:380px; left:810px;}
@@ -241,7 +246,8 @@ div.paddle2 {
   	animation-duration: 6s;
   	animation-iteration-count: infinite;
 }
-/*strafing for the right paddle to move away from puck, towards, away, and down*/
+/*strafing for the right paddle to move away 
+from puck, towards, away, and down*/
 @keyframes strafe2 {
  	0% {top:300px; left:1010px;}
 	25%{top:300px; left:1200px;}
